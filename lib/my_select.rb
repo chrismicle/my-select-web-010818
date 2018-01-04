@@ -5,13 +5,12 @@ def my_select(collection)
    new_collection = []
    i = 0 
    while i < collection.length
-  binding.pry
-    i += 1
+  # binding.pry
     if yield(collection[i]) 
-      binding.pry
+      # binding.pry
      new_collection << collection[i]
-      
     end
+    i += 1
    end
    new_collection
  else
